@@ -1,10 +1,24 @@
 /* ------- VARIABLES -------- */
 
-$primary:  #000000;
+$white: #FAF8F3;
+$white-darker: #F0EADB;
+$orange: #FF5C00;
+$black: #0E0E0E;
+
+$fs-reg: 1rem;
+$fs-1: 10.25rem; //164px
+$fs-2: 8rem; //128px
+$fs-3: 4rem; //64px
+$fs-4: 2.5rem; //40px
+$fs-5: 2rem; //32px
+$fs-6: 1.25rem; //20px
+$fs-7: 0.875rem; //14px
+$fs-8: 0.75rem; //12px
+
 
 @font-face {
-    font-family: '';
-    src: url(../);
+    font-family: 'PP Rader Regular';
+    src: url(../fonts/PPRader-Regular.otf);
 }
 
 
@@ -17,34 +31,122 @@ $primary:  #000000;
 }
 
 html {
-    font-family: "Poppins";
+    background: $white;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
-    color: #333;
+    color: $black;
     font-size: 16px;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+    line-height: 1.15;
 }
 
 body {
-    font-family: "Poppins";
+    background: $white;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
-    color: #333;
+    color: $black;
     font-size: 16px;
+    line-height: 1.15;
 }
 
 
 /* ------- TITLES, TEXTS -------- */
 
+.font-rader {
+    font-family: 'PP Rader Regular', sans-serif;
+}
+
 .fw-600 {
     font-weight: 600;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-300 {
+    font-weight: 300;
 }
 
 .fw-200 {
     font-weight: 200;
 }
 
+.font-size-reg {
+    font-size: $fs-reg;
+}
+
+.font-size-w-100 {
+    font-size: 8vw;
+}
+
+.font-size-1 {
+    font-size: $fs-1;
+}
+
+.font-size-2 {
+    font-size: $fs-2;
+}
+
+.font-size-3 {
+    font-size: $fs-3;
+}
+
+.font-size-4 {
+    font-size: $fs-4;
+}
+
+.font-size-5 {
+    font-size: $fs-5;
+}
+
+.font-size-6 {
+    font-size: $fs-6;
+}
+
+.font-size-7 {
+    font-size: $fs-7;
+}
+
+.font-size-8 {
+    font-size: $fs-8;
+}
+
 .text-black {
-    color: black;
+    color: $black;
+}
+
+.text-white {
+    color: $white !important;
+}
+
+.text-white-darker {
+    color: $white-darker;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+.text-indent {
+    text-indent: 4rem;
+}
+
+.line-height-1 {
+    line-height: 1;
+}
+
+.line-height-1-1 {
+    line-height: 1.1;
+}
+
+.line-height-1-2 {
+    line-height: 1.2;
+}
+
+.line-height-1-3 {
+    line-height: 1.3;
 }
 
 
@@ -64,6 +166,14 @@ body {
     background-color: black;
 }
 
+.bg-white-darker {
+    background: $white-darker;
+}
+
+.bg-orange {
+    background: $orange;
+}
+
 
 /* -----  BORDERS, SHADOWS AND OTHER  ----- */
 
@@ -73,6 +183,19 @@ body {
     width: 100px;
 }
 
+.border-orange-03 {
+    border-color: rgb(255, 92, 0, 0.3) !important;
+    
+}
+
+.border-orange {
+    border-color: $orange !important;
+}
+
+.border-col:last-child {
+    border: none !important;
+}
+
 
 /* ------- NAVBAR -------- */
   
@@ -80,15 +203,28 @@ body {
     width: 100px;
 }
 
+.nav-link {
+    font-family: 'PP Rader Regular', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: $white;
+}
+
+.navbar-nav-1 .nav-item {
+    margin-left: 34px;
+    margin-right: 34px;
+}
+
+.navbar-nav-2 .nav-item {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
 
 /* ------- HEADER -------- */
 
 header {
-    background: url(../img/hero-img.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh; 
+    height: 100vh; 
 }
 
 
@@ -98,7 +234,71 @@ header {
 /* ------- BUTTONS -------- */
 
 .btn {
-    min-width: 150px;
+    letter-spacing: 1px;
+}
+
+.btn-orange {
+    border: 1px solid $orange;
+    color: $white;
+    background-color: $orange;
+    transition: ease 0.4s;
+    path {
+        stroke: $white;
+        transition: ease 0.4s;
+    }
+    &:hover {
+        background-color: $black;
+        color: $white;
+        transition: ease 0.4s;
+        path {
+            stroke: $white;
+            transition: ease 0.4s;
+        }
+    }
+}
+
+.btn-orange-outline {
+    border: 1px solid $orange;
+    color: $orange;
+    transition: ease 0.4s;
+    path {
+        transition: ease 0.4s;
+    }
+    &:hover {
+        background-color: $orange;
+        color: $white;
+        transition: ease 0.4s;
+        path {
+            stroke: $white;
+            transition: ease 0.4s;
+        }
+    }
+}
+
+.btn-orange-underline {
+    border-bottom: 1px solid $orange;
+    padding: 0;
+    border-radius: 0;
+    color: $orange;
+    svg {
+        transition: ease 0.4s;
+    }
+    path {
+        transition: ease 0.4s;
+    }
+    &:hover {
+        border-bottom: 1px solid $black;
+        color: $black;
+        transition: ease 0.4s;
+        svg {
+            transform: translate(3px, -3px);
+            transition: ease 0.4s;
+        }
+        path {
+            stroke: $black;
+            transition: ease 0.4s;
+        }
+    }
 }
 
 .button-style-none {
@@ -125,23 +325,63 @@ button:focus {
 
 /* ------- FORMS -------- */
 
+.form-control  {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(14, 14, 14, 0.5);
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: $fs-7;
+}
+
+.form-control:focus {
+    background: transparent;
+    border-bottom: 1px solid rgb(14, 14, 14, 1);
+}
+
+.form-check-input {
+    background: transparent;
+    border: 1px solid rgb(14, 14, 14, 0.5);
+}
+
+.form-check-input:focus {
+    border: 1px solid rgb(14, 14, 14, 0.5);
+}
+
+.form-check-input:checked {
+    border: 1px solid rgb(14, 14, 14, 0.5);
+    background: rgb(14, 14, 14, 1);
+}
+
+.form-check-label {
+    color: rgb(14, 14, 14, 0.5) !important;
+    font-weight: 300;
+    font-size: $fs-7;
+}
+
 ::placeholder {
-    color: black !important;
+    color: rgb(14, 14, 14, 0.5) !important;
+    font-weight: 300;
+    font-size: $fs-7;
 }
   
 :-ms-input-placeholder {
-    color: black !important;
+    color: rgb(14, 14, 14, 0.5) !important;
+    font-weight: 300;
+    font-size: $fs-7;
 }
   
 ::-ms-input-placeholder {
-    color: black !important;
+    color: rgb(14, 14, 14, 0.5) !important;
+    font-weight: 300;
+    font-size: $fs-7;
 }
 
 /* ------- POSITIONING -------- */
 
-.anchor {
-    padding-top: 100px;
-    margin-top: -100px;
+.h-200 {
+    height: 200%;
 }
 
 .my-sec {
@@ -149,8 +389,29 @@ button:focus {
     margin-bottom: 60px;
 }
 
+.mt-sec {
+    margin-top: 60px;
+}
+
+.mb-sec {
+    margin-bottom: 60px;
+}
+
 .py-sec {
     padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.py-sec-lg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.pt-sec {
+    padding-top: 60px;
+}
+
+.pb-sec {
     padding-bottom: 60px;
 }
 
@@ -162,13 +423,36 @@ button:focus {
     z-index: 2;
 }
 
+.op-03 {
+    opacity: 0.3;
+}
+
+.op-05 {
+    opacity: 0.5;
+}
+
+.op-07 {
+    opacity: 0.7;
+}
+
 
 /* ------- ACTIONS -------- */
 
-.hover-primary {
+.hover-orange {
     color: #212529;
     &:hover {
-        color: $primary;
+        color: $orange;
+    }
+}
+
+.hover-u {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: ease 0.4s;
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: unset;
+        transition: ease 0.4s;
     }
 }
 
@@ -183,6 +467,29 @@ a:hover {
 
 
 /* ------- QUERIES -------- */
+
+// Max Medium devices
+@media (max-width: 991px) {
+    .font-size-1 {
+        font-size: 3rem;
+    }
+
+    .font-size-2 {
+        font-size: 2.7rem;
+    }
+
+    .font-size-3 {
+        font-size: 2.5rem;
+    }
+
+    .font-size-4 {
+        font-size: 2rem;
+    }
+
+    .border-col {
+        border: none !important;
+    }
+}
 
 // Small devices
 @media (min-width: 576px) {}
@@ -204,6 +511,10 @@ a:hover {
         position: absolute;
     }
 
+    .w-lg-35 {
+        width: 35%;
+    }
+
     .w-lg-50 {
         width: 50%;
     }
@@ -216,9 +527,43 @@ a:hover {
         margin-top: 90px;
         margin-bottom: 90px;
     }
+
+    .mt-sec {
+        margin-top: 90px;
+    }
+    
+    .mb-sec {
+        margin-bottom: 90px;
+    }
+
+    .mt-lg-sec {
+        margin-top: 90px;
+    }
+    
+    .mb-lg-sec {
+        margin-bottom: 90px;
+    }
     
     .py-sec {
         padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .py-sec-lg {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
+    .py-sec-lg-lg {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+
+    .pt-sec {
+        padding-top: 90px;
+    }
+    
+    .pb-sec {
         padding-bottom: 90px;
     }
 }

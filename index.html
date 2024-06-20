@@ -14,8 +14,10 @@
         
         <!-- LINKS AND SCRIPTS -->
 
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
@@ -29,7 +31,7 @@
 
         <!-- TITLE -->
 
-        <title>Title</title>
+        <title>Flickinger Glass</title>
 
     </head>
 
@@ -37,7 +39,47 @@
 
         <!-- NAVBAR -->
 
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg position-absolute w-100">
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-lg-0">
+                <ul class="navbar-nav navbar-nav-1 mx-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Bent glass</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Shop</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="my-2 order-0 order-lg-1 position-relative">
+                <a class='navbar-brand me-auto mx-lg-auto' href='/'>
+                    <img src="img/logo/logo.png" alt="">
+                </a>
+            </div>
+            <button class="navbar-toggler border-0 ms-auto" data-toggle="collapse" data-target=".dual-collapse2">
+                Mobile menu
+            </button>
+            <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-lg-2">
+                <ul class="navbar-nav navbar-nav-2 mx-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Hall of fame</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Bag</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- <nav class="navbar navbar-expand-md position-lg-absolute w-100 mt-3">
             <div class="container">
                 <a href="index.html" class="navbar-brand">Brand</a>
                 <button type="button" class="navbar-toggler button-style-none ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -57,7 +99,7 @@
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
         <div class="modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen me-0">
@@ -90,25 +132,337 @@
 
         <!-- HEADER -->
 
-        <header>
-            <div class="h-100 d-flex flex-column align-items-center justify-content-center px-2">
-                <h1 class="text-center" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="200">Some text</h1>
-                <h4 class="text-center mt-3" data-aos="fade-in" data-aos-easing="ease-in-out" data-aos-delay="300">Some text</h4>
+        <header class="text-uppercase text-white p-2">
+            <div class="bg-neat h-100 rounded-3" style="background-image: url(img/pictures/hero.png);">
+                <div class="h-100 d-flex flex-column flex-lg-row align-items-lg-end justify-content-end justify-content-lg-between p-4">
+                    <p class="font-size-6 font-rader line-height-1-2 mb-2">made by hand<br>in red hook, NY</p>
+                    <h1 class="font-size-1 font-rader line-height-1 text-center mb-0">Flickinger<br>Glassworks</h1>
+                    <p class="align-self-end font-size-6 font-rader line-height-1-2 mb-2">since 1985</p>
+                </div>
             </div>
         </header>
 
-        <!-- SECTIONS -->
+        <!-- TWO COLUMN CONTENT -->
 
-        <section></section>
+        <section class="border-top border-orange-03">
+            <div class="container-fluid">
+                <div class="row mb-4 mb-lg-0">
+                    <div class="col-lg-6 border-end border-col border-orange-03 pt-sec">
+                        <h2 class="font-size-7 fw-400 text-uppercase mb-4">Get to know us</h2>
+                        <p class="font-size-4 font-rader line-height-1-1 text-indent">Flickinger Glassworks sets the standard for quality, precision, and beauty in bent glass through empowering our diverse team of artisans and craftspeople.</p>
+                    </div>
+                    <div class="col-lg-6 border-end border-col border-orange-03"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 border-end border-col border-orange-03"></div>
+                    <div class="col-lg-6 border-end border-col border-orange-03 pb-sec">
+                        <div class="d-flex flex-column">
+                            <img src="img/pictures/about-us.png" alt="" class="w-75 ms-auto mt-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section></section>
+        <!-- CONTENT WITH BACKGROUND -->
+
+        <!-- <section class="px-2">
+            <div class="d-flex flex-column bg-neat rounded-3 text-white p-4 pt-5" style="background-image: url(img/pictures/NY.png);">
+                <div>
+                    <h2 class="font-size-7 fw-400 text-uppercase">Made by hand in</h2>
+                    <p class="font-size-2 font-rader line-height-1-1">Red Hook,<br>Brooklyn, NY</p>
+                </div>
+                <div class="w-lg-35 d-flex flex-column align-self-end bg-white-darker rounded-1">
+                    <img src="img/pictures/Charles.png" alt="" class="w-50 align-self-end rounded-1 mx-3 mt-3">
+                    <div class="d-flex flex-column p-4">
+                        <p class="font-size-7 text-indent text-black">Over the years, Flickinger Glass founder Charles built the reputation of Flickinger Glassworks to be a premier glass fabricator specializing in custom glass bending, prototyping, and full-scale high-quality glass production for a number of various uses, from functional to decorative.</p>
+                        <a href="#" class="d-flex align-items-center text-orange text-uppercase font-rader border-bottom border-orange me-auto">
+                            About us
+                            <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="px-2">
+            <div class="container-fluid px-0">
+                <div class="bg-neat rounded-3 text-white p-4 pt-5" style="background-image: url(img/pictures/NY.png);">
+                    <div class="row gy-4">
+                        <div class="col-lg-6">
+                            <h2 class="font-size-7 fw-400 text-uppercase">Made by hand in</h2>
+                            <p class="font-size-2 font-rader line-height-1-1 mb-0">Red Hook,<br>Brooklyn, NY</p>
+                        </div>
+                        <div class="col-lg-5 offset-lg-7 ps-lg-5">
+                            <div class="d-flex flex-column bg-white-darker rounded-1">
+                                <img src="img/pictures/Charles.png" alt="" class="w-50 align-self-end rounded-1 mx-3 mt-3">
+                                <div class="d-flex flex-column p-4">
+                                    <p class="font-size-7 text-indent text-black">Over the years, Flickinger Glass founder Charles built the reputation of Flickinger Glassworks to be a premier glass fabricator specializing in custom glass bending, prototyping, and full-scale high-quality glass production for a number of various uses, from functional to decorative.</p>
+                                    <a href="#" class="d-flex align-items-center text-orange text-uppercase font-rader border-bottom border-orange me-auto">
+                                        About us
+                                        <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                            <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TWO CARDS IN CENTER -->
+
+        <section class="border-bottom border-orange-03 py-sec py-lg-0">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-stretch gy-4">
+                    <div class="col-lg-4 border-end border-col border-orange-03 py-sec-lg-lg ps-lg-0">
+                        <img src="img/pictures/team.png" alt="" class="w-100 rounded-2 mb-lg-sec">
+                    </div>
+                    <div class="col-lg-4 border-end border-col border-orange-03 py-sec-lg-lg mt-lg-sec pe-lg-0">
+                        <div class="h-100 d-flex flex-column bg-white-darker rounded-2 p-4">
+                            <h2 class="font-size-3 text-uppercase font-rader">Hall of fame</h2>
+                            <div class="d-flex flex-column mt-auto">
+                                <p class="font-size-7 text-indent text-black">Our expertise in curved glass spans various industries and needs, including windows, lighting solutions, cabinetry, restoration projects, architectural elements, art, and decorative items. Each category benefits from our specialized approach to glass bending, which combines traditional craftsmanship with innovative techniques.</p>
+                                <a href="#" class="btn btn-orange-underline d-flex align-items-center text-uppercase font-rader me-auto">
+                                    Explore artists
+                                    <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                        <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG -->
+
+        <section class="py-sec py-sec-lg">
+            <div class="container-fluid">
+                <div class="row align-items-stretch gx-5 gy-4">
+                    <div class="col-lg-4 border-end border-col border-orange-03">
+                        <div class="h-100 d-flex flex-column py-3">
+                            <h3 class="font-size-5 font-rader line-height-1-1 mb-3">Praesent a nisl fringilla, pellentesque felis et, scelerisque erat</h3>
+                            <p class="font-size-7 text-uppercase text-orange mb-4 mb-lg-5">MAY 17, 2024</p>
+                            <p class="font-size-7">Curabitur condimentum mattis ipsum id lobortis. Vestibulum nec nibh non risus tristique dignissim. Proin iaculis nibh in tincidunt sagittis. Curabitur est ipsum, mollis eget velit id.</p>
+                            <a href="#" class="btn btn-orange-outline d-flex align-items-center text-uppercase font-rader rounded-2 me-auto">
+                                Read
+                                <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                    <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 border-end border-col border-orange-03">
+                        <div class="h-100 d-flex flex-column py-3">
+                            <h3 class="font-size-5 font-rader line-height-1-1 mb-3">Proin iaculis nibh in tincidunt sagittis. Curabitur est ipsum, mollis eget velit id, euismod bibendum turpis</h3>
+                            <p class="font-size-7 text-uppercase text-orange mb-4 mb-lg-5">MAY 17, 2024</p>
+                            <p class="font-size-7">Sed consectetur fermentum placerat. In hac habitasse platea dictumst. Nam facilisis quam accumsan purus lacinia, eu sagittis libero ullamcorper. Etiam pellentesque urna eget pharetra consequat. Donec non congue lorem. Vestibulum condimentum lacus sed tortor viverra, non fringilla felis dictum.</p>
+                            <a href="#" class="btn btn-orange-outline d-flex align-items-center text-uppercase font-rader rounded-2 me-auto">
+                                Read
+                                <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                    <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 border-end border-col border-orange-03">
+                        <div class="h-100 d-flex flex-column py-3">
+                            <h3 class="font-size-5 font-rader line-height-1-1 mb-3">Nulla cursus semper ornare. Vivamus interdum velit sem</h3>
+                            <p class="font-size-7 text-uppercase text-orange mb-4 mb-lg-5">MAY 17, 2024</p>
+                            <p class="font-size-7">Nullam dolor enim, semper ut dignissim mattis, placerat eu erat. Sed eu leo vestibulum, tempor risus id, maximus ligula. Sed efficitur finibus urna, id maximus tellus efficitur et. Donec fringilla velit.</p>
+                            <a href="#" class="btn btn-orange-outline d-flex align-items-center text-uppercase font-rader rounded-2 me-auto">
+                                Read
+                                <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                    <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORM WITH BACKGROUND -->
+
+        <!-- <section class="px-2">
+            <div class="d-flex flex-column bg-neat rounded-3 text-white p-4 pt-5" style="background-image: url(img/pictures/bg-glasswork.png);">
+                <div>
+                    <h2 class="font-size-2 font-rader line-height-1-1">Reach Out<br>To Us</h2>
+                </div>
+                <div class="w-lg-50 align-self-end bg-white-darker rounded-1 p-5">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="First Name" placeholder="First Name*">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="Last Name" placeholder="Last Name*">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="Email" placeholder="Email*">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" name="Message" rows="4" placeholder="Message*"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="policyCheck">
+                            <label class="form-check-label pt-1" for="policyCheck">I declare that I have read and understand the privacy policy.*</label>
+                        </div>
+                        <button type="submit" class="btn btn-orange d-flex align-items-center text-uppercase font-rader rounded-2 me-auto mt-4">
+                            Read
+                            <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="px-2 mb-sec">
+            <div class="container-fluid px-0">
+                <div class="bg-neat rounded-3 text-white p-4 pt-5" style="background-image: url(img/pictures/bg-glasswork.png);">
+                    <div class="row gy-4">
+                        <div class="col-lg-6">
+                            <h2 class="font-size-2 font-rader line-height-1-1 mb-0">Reach Out<br>To Us</h2>
+                        </div>
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="bg-white-darker rounded-1 p-4 p-lg-5">
+                                <form>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="First Name" placeholder="First Name*">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="Last Name" placeholder="Last Name*">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" name="Email" placeholder="Email*">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" name="Message" rows="4" placeholder="Message*"></textarea>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="policyCheck">
+                                        <label class="form-check-label pt-1" for="policyCheck">I declare that I have read and understand the privacy policy.*</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-orange d-flex align-items-center text-uppercase font-rader rounded-2 me-auto mt-4">
+                                        Read
+                                        <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                            <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- FOOTER -->
 
-        <footer class="bg-light py-4">
-            <div class="d-flex justify-content-center align-items-center">
-                <p class="mb-0">© <span id="year"></span> Title</p>
+        <footer class="bg-white-darker">
+            <div class="container-fluid py-4">
+                <h2 class="font-size-w-100 text-uppercase font-rader d-flex justify-content-between mx-4"><span>Flickinger </span><span>glassworks</span></h2>
             </div>
+            <div class="border-top border-bottom border-orange-03 line-height-1-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6 border-end border-col border-orange-03 pt-sec pb-5">
+                            <div class="row gx-5 mx-3">
+                                <div class="col-lg-4">
+                                    <h3 class="font-size-8 text-uppercase fw-400">Bent Glass</h3>
+                                    <div>
+                                        <a href="" class="font-size-8 text-black op-07 hover-u">Curved Windows</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-black op-07 hover-u">Replacement Glass</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-black op-07 hover-u">Custom Glass for lightning</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-black op-07 hover-u">Laminated shatterproof glass</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-black op-07 hover-u">Architectural glass</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-black op-07 hover-u">Custom stained glass</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href="" class="font-size-8 text-uppercase fw-400 text-black hover-u">About us</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-uppercase fw-400 text-black hover-u">Shop</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-uppercase fw-400 text-black hover-u">Hall of fame</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-uppercase fw-400 text-black hover-u">Blog</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-uppercase fw-400 text-black hover-u">Contact</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <a href="" class="font-size-8 text-uppercase fw-400 text-black hover-u">privacy policy</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-uppercase fw-400 text-black hover-u">Cookies policy</a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="font-size-8 text-uppercase fw-400 text-black hover-u">Terms & conditions</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 border-end border-col border-orange-03 pt-sec pb-5">
+                            <div class="row gx-5 mx-3">
+                                <div class="col-lg-4">
+                                    <h3 class="font-size-7 text-uppercase fw-400 op-05">Address:</h3>
+                                    <div class="font-size-7 fw-400 op-05">175 Van Dyke St, Pier 41<br>Brooklyn, NY 11231<br>718.875.1531</div>
+                                    <div>
+                                        <a href="" class="font-size-7 fw-400 text-black"><u>Get Directions</u></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <h3 class="font-size-7 text-uppercase fw-400 op-05">Contact:</h3>
+                                    <div class="font-size-7 fw-400">US: 718.875.1531</div>
+                                    <div class="font-size-7 fw-400">eric@flickingerglassworks.com</div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h3 class="font-size-7 text-uppercase op-05">Social:</h3>
+                                    <div>
+                                        <a href="#" class="font-size-7 fw-400 text-black"><u>Facebook</u></a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="font-size-7 fw-400 text-black"><u>Facebook</u></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="font-size-7 text-center py-2">© 2024 Flickinger Glassworks</div>
         </footer>
 
 
@@ -116,10 +470,8 @@
         <!-- SCRIPTS -->
 
         <script src="https://kit.fontawesome.com/e3336da53c.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
