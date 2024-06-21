@@ -60,7 +60,7 @@ body {
 }
 
 .font-size-1 {
-  font-size: 10.25rem;
+  font-size: 12vw;
 }
 
 .font-size-2 {
@@ -179,6 +179,16 @@ body {
   text-transform: uppercase;
   font-size: 0.875rem;
   color: #FAF8F3;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: ease 0.4s;
+}
+.nav-link:hover {
+  color: #FAF8F3;
+  text-decoration: underline;
+  text-decoration-color: unset;
+  transition: ease 0.4s;
 }
 
 .navbar-nav-1 .nav-item {
@@ -263,6 +273,29 @@ header {
 }
 .btn-orange-underline:hover path {
   stroke: #0E0E0E;
+  transition: ease 0.4s;
+}
+
+.btn-white-underline {
+  border-bottom: 1px solid #FAF8F3;
+  padding: 0;
+  border-radius: 0;
+  color: #FAF8F3;
+}
+.btn-white-underline svg {
+  transition: ease 0.4s;
+}
+.btn-white-underline path {
+  stroke: #FAF8F3;
+  transition: ease 0.4s;
+}
+.btn-white-underline:hover {
+  border-bottom: 1px solid #FAF8F3;
+  color: #FAF8F3;
+  transition: ease 0.4s;
+}
+.btn-white-underline:hover svg {
+  transform: translate(3px, -3px);
   transition: ease 0.4s;
 }
 
@@ -355,6 +388,11 @@ button:focus {
   margin-bottom: 60px;
 }
 
+.my-sec-lg {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .mt-sec {
   margin-top: 60px;
 }
@@ -374,6 +412,10 @@ button:focus {
 }
 
 .pt-sec {
+  padding-top: 60px;
+}
+
+.pt-sec-lg {
   padding-top: 60px;
 }
 
@@ -420,6 +462,22 @@ button:focus {
   transition: ease 0.4s;
 }
 
+.hover-zoom + img {
+  transition: ease 0.4s;
+}
+
+.hover-zoom {
+  transition: ease 0.4s;
+}
+.hover-zoom:hover .btn-white-underline svg {
+  transform: translate(3px, -3px);
+  transition: ease 0.4s;
+}
+.hover-zoom:hover + img {
+  transform: scale(1.05);
+  transition: ease 0.4s;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -431,9 +489,6 @@ a:hover {
 
 /* ------- QUERIES -------- */
 @media (max-width: 991px) {
-  .font-size-1 {
-    font-size: 3rem;
-  }
   .font-size-2 {
     font-size: 2.7rem;
   }
@@ -445,6 +500,9 @@ a:hover {
   }
   .border-col {
     border: none !important;
+  }
+  .rounded-0-mob {
+    border-radius: 0 !important;
   }
 }
 @media (min-width: 768px) {
@@ -471,6 +529,10 @@ a:hover {
   .my-sec {
     margin-top: 90px;
     margin-bottom: 90px;
+  }
+  .my-sec-lg {
+    margin-top: 160px;
+    margin-bottom: 160px;
   }
   .mt-sec {
     margin-top: 90px;
@@ -499,8 +561,19 @@ a:hover {
   .pt-sec {
     padding-top: 90px;
   }
+  .pt-sec-lg {
+    padding-top: 160px;
+  }
   .pb-sec {
     padding-bottom: 90px;
+  }
+  .rounded-0-col-wrapper:first-child .rounded-0-col {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  .rounded-0-col-wrapper:last-child .rounded-0-col {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
   }
 }
 @media (min-width: 1600px) {
