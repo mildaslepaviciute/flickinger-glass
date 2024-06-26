@@ -39,7 +39,7 @@
 
         <!-- NAVBAR -->
 
-        <nav class="navbar navbar-expand-lg position-absolute w-100">
+        <nav class="navbar navbar-expand-lg nav-white">
             <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-lg-0">
                 <ul class="navbar-nav navbar-nav-1 mx-auto">
                     <li class="nav-item">
@@ -52,7 +52,7 @@
             </div>
             <div class="my-2 order-0 order-lg-1 position-relative">
                 <a class='navbar-brand me-auto mx-lg-auto' href='/'>
-                    <img src="img/logo/logo.png" alt="">
+                    <img src="img/logo/logo-black.png" alt="">
                 </a>
             </div>
             <button class="navbar-toggler border-0 ms-auto pe-4" data-toggle="collapse" data-target=".dual-collapse2">
@@ -133,73 +133,97 @@
             </div>
         </div>
 
-        <!-- HEADER -->
+        <!-- SINGLE PRODUCT -->
 
-        <header class="text-white p-2">
-            <div class="container-fluid px-0">
-                <div class="bg-neat rounded-3 text-white px-4 py-5 pb-lg-4" style="background-image: url(img/pictures/hero-sm.png);">
-                    <div class="row gy-4 pt-sec">
-                        <div class="col-lg-8">
-                            <h1 class="font-size-2 font-rader line-height-1-1 mb-0">From real hands<br>to homes</h1>
+        <section class="border-top border-bottom border-orange-03 px-0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 border-end border-col border-orange-03 py-4 pe-lg-4">
+                        <div class="position-relative">
+                            <div class="ratio ratio-1x1">
+                                <img src="img/pictures/product-page-1.png" alt="" class="object-fit-cover rounded-3">
+                            </div>
+                            <div class="position-absolute top-0 start-0 w-100 h-100 z-2 m-3">
+                                <div class="ratio ratio-1x1 w-18">
+                                    <img src="img/pictures/product-page-2.png" alt="" class="object-fit-cover rounded-3">
+                                </div>
+                            </div>
+                            <div class="position-absolute top-0 start-0 w-100 h-100 z-2 m-3">
+                                <div class="ratio ratio-1x1 w-18 mb-3 mb-last-none">
+                                    <img src="img/pictures/product-page-2.png" alt="" class="object-fit-cover rounded-3">
+                                </div>
+                                <div class="ratio ratio-1x1 w-18 mb-3 mb-last-none">
+                                    <img src="img/pictures/product-page-1.png" alt="" class="object-fit-cover rounded-3">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 offset-lg-8 ps-lg-0">
-                            <div class="d-flex flex-column bg-white-darker rounded-1">
-                                <img src="img/pictures/person-2.png" alt="" class="w-50 align-self-end rounded-1 mx-3 mt-3">
-                                <div class="d-flex flex-column p-4">
-                                    <p class="font-size-7 text-indent text-black">Over the years, Flickinger Glass founder Charles built the reputation of Flickinger Glassworks to be a premier glass fabricator specializing in custom glass bending, prototyping, and full-scale high-quality glass production for a number of various uses, from functional to decorative.</p>
-                                    <a href="#" class="btn btn-orange-underline d-flex align-items-center text-uppercase font-rader me-auto">
-                                        About us
-                                        <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
-                                            <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
-                                        </svg>
-                                    </a>
+                    </div>
+                    <div class="col-lg-6 border-end border-col border-orange-03">
+                        <div class="d-flex flex-column py-sec px-5">
+                            <div class="breadcrumbs"><a href="" class="hover-u">Home</a><span> / </span><a href="" class="hover-u">Shop all</a></div>
+                            <h2 class="font-size-4 font-rader fw-400 mb-4">Dinner tableware set</h2>
+                            <div class="font-size-8 text-uppercase fw-500 op-07 mb-3">collection name</div>
+                            <div class="font-size-7 text-green mb-3">Short desription of product would appear here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit sit amet dui in consequat.</div>
+                            <div class="font-size-6 font-rader mb-3">$ 599.00</div>
+                            <div class="d-flex mb-4">
+                                <button class="btn-feature rounded-3 border border-orange font-rader font-size-7 text-uppercase letter-s-1 px-2 py-1 me-2">Small</button>
+                                <button class="btn-feature rounded-3 border border-orange font-rader font-size-7 text-uppercase letter-s-1 px-2 py-1 me-2">Medium</button>
+                                <button class="btn-feature rounded-3 border border-orange font-rader font-size-7 text-uppercase letter-s-1 px-2 py-1 me-2">Large</button>
+                            </div>
+                            <button type="submit" class="btn btn-orange d-flex align-items-center justify-content-center text-uppercase font-rader rounded-2 mb-4">
+                                Add to bag
+                                <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                    <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <div class="accordion-button collapsed bg-transparent font-rader pointer px-0" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Description
+                                        </div>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body font-size-8 text-green px-0">In ultricies auctor nulla. Aliquam sit amet tortor quis elit faucibus dignissim. Sed laoreet lacus sed lorem rutrum, quis interdum arcu egestas. Donec eu vehicula metus. Pellentesque auctor mi sit amet sollicitudin porttitor.<br>Nullam ut nibh sed felis auctor bibendum. Aenean vehicula felis sem, ac dignissim metus pulvinar ut. Quisque a vehicula tortor.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <div class="accordion-button collapsed bg-transparent font-rader pointer px-0" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Shipping
+                                        </div>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body font-size-8 text-green px-0">In ultricies auctor nulla. Aliquam sit amet tortor quis elit faucibus dignissim. Sed laoreet lacus sed lorem rutrum, quis interdum arcu egestas. Donec eu vehicula metus. Pellentesque auctor mi sit amet sollicitudin porttitor.<br>Nullam ut nibh sed felis auctor bibendum. Aenean vehicula felis sem, ac dignissim metus pulvinar ut. Quisque a vehicula tortor.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <div class="accordion-button collapsed bg-transparent font-rader pointer px-0" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Return
+                                        </div>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body font-size-8 text-green px-0">In ultricies auctor nulla. Aliquam sit amet tortor quis elit faucibus dignissim. Sed laoreet lacus sed lorem rutrum, quis interdum arcu egestas. Donec eu vehicula metus. Pellentesque auctor mi sit amet sollicitudin porttitor.<br>Nullam ut nibh sed felis auctor bibendum. Aenean vehicula felis sem, ac dignissim metus pulvinar ut. Quisque a vehicula tortor.</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
 
         <!-- PRODUCTS -->
 
         <section class="my-sec">
             <div class="container-fluid">
-                <div class="d-flex flex-column font-rader letter-s-1">
-                    <div class="d-flex align-items-end justify-content-between border-bottom border-orange-03 pb-3">
-                        <div class="d-flex">
-                            <h2 class="font-size-3 fw-400 mb-0"><u>All</u></h2>
-                            <span class="fw-400 ms-1">38</span>
-                        </div>
-                        <div class="d-flex">
-                            <a href="" class="text-black fw-400 ms-4 p-1">All</a>
-                            <a href="" class="text-black fw-400 ms-4 p-1">Tableware</a>
-                            <a href="" class="text-black fw-400 ms-4 p-1">Decorative items</a>
-                            <a href="" class="text-black fw-400 ms-4 p-1">Decorative Mirror</a>
-                            <a href="" class="text-black fw-400 ms-4 p-1">Jewelry</a>
-                        </div>
-                    </div>
-                    <div class="mt-3">
-                        Sort by newest
-                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.48532 0.999965L5.24268 5.24261L1.00004 0.999965" stroke="#0E0E0E" stroke-width="1.2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                </div>
+                <h2 class="font-size-3 font-rader fw-400 mb-0">You might also like</h2>
                 <div class="row gx-3 gy-4 mt-4">
                     <div class="col-lg-3">
                         <a href="">
-                            <div class="ratio position-relative overflow-hidden rounded-3" style="--bs-aspect-ratio: 125%;">
-                                <div class="position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-between align-items-end hover-zoom p-3 z-1">
-                                    <div class="rounded-3 bg-white font-rader font-size-7 text-uppercase letter-s-1 text-black p-1">Sale -30%</div>
-                                    <button class="btn-add d-flex align-items-center rounded-3 border border-white font-rader font-size-7 text-uppercase letter-s-1 p-1 ms-auto">
-                                        Quick add
-                                        <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.51562 5.53906C4.96875 5.53906 5.25 5.25781 5.25 4.80469V0.257812H6.21875V4.80469C6.21875 5.25781 6.5 5.53906 6.95312 5.53906H11.5V6.49219H6.95312C6.5 6.49219 6.21875 6.75781 6.21875 7.21094V11.7422H5.25V7.21094C5.25 6.75781 4.96875 6.49219 4.51562 6.49219H0V5.53906H4.51562Z" fill="#FAF8F3"/>
-                                        </svg>    
-                                    </button>
-                                </div>
+                            <div class="ratio overflow-hidden rounded-3" style="--bs-aspect-ratio: 125%;">
                                 <img src="img/pictures/product-1.png" alt="" class="w-100 object-fit-cover">
                             </div>
                             <div class="d-flex justify-content-between text-black p-2">
@@ -213,16 +237,7 @@
                     </div>
                     <div class="col-lg-3">
                         <a href="">
-                            <div class="ratio position-relative overflow-hidden rounded-3" style="--bs-aspect-ratio: 125%;">
-                                <div class="position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-between align-items-end hover-zoom p-3 z-1">
-                                    <div class="rounded-3 bg-white font-rader font-size-7 text-uppercase letter-s-1 text-black p-1">Sale -30%</div>
-                                    <button class="btn-add d-flex align-items-center rounded-3 border border-white font-rader font-size-7 text-uppercase letter-s-1 p-1 ms-auto">
-                                        Quick add
-                                        <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.51562 5.53906C4.96875 5.53906 5.25 5.25781 5.25 4.80469V0.257812H6.21875V4.80469C6.21875 5.25781 6.5 5.53906 6.95312 5.53906H11.5V6.49219H6.95312C6.5 6.49219 6.21875 6.75781 6.21875 7.21094V11.7422H5.25V7.21094C5.25 6.75781 4.96875 6.49219 4.51562 6.49219H0V5.53906H4.51562Z" fill="#FAF8F3"/>
-                                        </svg>    
-                                    </button>
-                                </div>
+                            <div class="ratio overflow-hidden rounded-3" style="--bs-aspect-ratio: 125%;">
                                 <img src="img/pictures/product-2.png" alt="" class="w-100 object-fit-cover">
                             </div>
                             <div class="d-flex justify-content-between text-black p-2">
@@ -236,16 +251,7 @@
                     </div>
                     <div class="col-lg-3">
                         <a href="">
-                            <div class="ratio position-relative overflow-hidden rounded-3" style="--bs-aspect-ratio: 125%;">
-                                <div class="position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-between align-items-end hover-zoom p-3 z-1">
-                                    <div class="rounded-3 bg-white font-rader font-size-7 text-uppercase letter-s-1 text-black p-1">Sale -30%</div>
-                                    <button class="btn-add d-flex align-items-center rounded-3 border border-white font-rader font-size-7 text-uppercase letter-s-1 p-1 ms-auto">
-                                        Quick add
-                                        <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.51562 5.53906C4.96875 5.53906 5.25 5.25781 5.25 4.80469V0.257812H6.21875V4.80469C6.21875 5.25781 6.5 5.53906 6.95312 5.53906H11.5V6.49219H6.95312C6.5 6.49219 6.21875 6.75781 6.21875 7.21094V11.7422H5.25V7.21094C5.25 6.75781 4.96875 6.49219 4.51562 6.49219H0V5.53906H4.51562Z" fill="#FAF8F3"/>
-                                        </svg>    
-                                    </button>
-                                </div>
+                            <div class="ratio overflow-hidden rounded-3" style="--bs-aspect-ratio: 125%;">
                                 <img src="img/pictures/product-3.png" alt="" class="w-100 object-fit-cover">
                             </div>
                             <div class="d-flex justify-content-between text-black p-2">
@@ -259,17 +265,8 @@
                     </div>
                     <div class="col-lg-3">
                         <a href="">
-                            <div class="ratio position-relative overflow-hidden rounded-3" style="--bs-aspect-ratio: 125%;">
-                                <div class="position-absolute w-100 h-100 top-0 start-0 d-flex justify-content-between align-items-end hover-zoom p-3 z-1">
-                                    <div class="rounded-3 bg-white font-rader font-size-7 text-uppercase letter-s-1 text-black p-1">Sale -30%</div>
-                                    <button class="btn-add d-flex align-items-center rounded-3 border border-white font-rader font-size-7 text-uppercase letter-s-1 p-1 ms-auto">
-                                        Quick add
-                                        <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.51562 5.53906C4.96875 5.53906 5.25 5.25781 5.25 4.80469V0.257812H6.21875V4.80469C6.21875 5.25781 6.5 5.53906 6.95312 5.53906H11.5V6.49219H6.95312C6.5 6.49219 6.21875 6.75781 6.21875 7.21094V11.7422H5.25V7.21094C5.25 6.75781 4.96875 6.49219 4.51562 6.49219H0V5.53906H4.51562Z" fill="#FAF8F3"/>
-                                        </svg>    
-                                    </button>
-                                </div>
-                                <img src="img/pictures/hero.png" alt="" class="w-100 object-fit-cover">
+                            <div class="ratio overflow-hidden rounded-3" style="--bs-aspect-ratio: 125%;">
+                                <img src="img/pictures/product-1.png" alt="" class="w-100 object-fit-cover">
                             </div>
                             <div class="d-flex justify-content-between text-black p-2">
                                 <div>
@@ -283,76 +280,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- TWO COLUMN CONTENT -->
-
-        <section class="bg-white-darker py-sec py-lg-0">
-            <div class="container-fluid">
-                <div class="row align-items-stretch gy-4 gy-lg-0">
-                    <div class="col-lg-6 py-0 py-lg-5">
-                        <div class="h-100 d-flex flex-column justify-content-between">
-                            <div>
-                                <h2 class="font-size-7 fw-400 text-uppercase mb-4">Get to know us</h2>
-                                <p class="font-size-4 font-rader line-height-1-1 text-indent">Flickinger Glassworks sets the standard for quality, precision, and beauty in bent glass through empowering our diverse team of artisans and craftspeople.</p>
-                            </div>
-                            <a href="#" class="btn btn-orange-underline d-flex align-items-center text-uppercase font-rader me-auto">
-                                About us
-                                <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
-                                    <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 offset-lg-2 my-lg-4">
-                        <img src="img/pictures/glasswork.png" alt="" class="w-100 rounded-3">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FORM -->
-
-        <section class="px-lg-2 my-sec">
-            <div class="container-fluid px-0">
-                <div class="bg-neat rounded-3 rounded-0-mob text-white px-4 py-5 pb-lg-4" style="background-image: url(img/pictures/bg-glasswork.png);">
-                    <div class="row gy-4">
-                        <div class="col-lg-6">
-                            <h2 class="font-size-2 font-rader line-height-1-1 mb-0">Reach Out<br>To Us</h2>
-                        </div>
-                        <div class="col-lg-6 offset-lg-6 mt-n">
-                            <div class="bg-white-darker rounded-1 p-4 p-lg-5">
-                                <form>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" name="First Name" placeholder="First Name*">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" name="Last Name" placeholder="Last Name*">
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" name="Email" placeholder="Email*">
-                                    </div>
-                                    <div class="mb-3">
-                                        <textarea class="form-control" name="Message" rows="4" placeholder="Message*"></textarea>
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="policyCheck">
-                                        <label class="form-check-label pt-1" for="policyCheck">I declare that I have read and understand the privacy policy.*</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-orange d-flex align-items-center text-uppercase font-rader rounded-2 me-auto mt-4">
-                                        Read
-                                        <svg class="ms-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 10.7061L10.8674 1.57349" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
-                                            <path d="M2.2207 0.926758H11.2207V9.92676" stroke="#FF5C00" stroke-width="1.2" stroke-linecap="round"/>
-                                        </svg>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- FOOTER -->
 
