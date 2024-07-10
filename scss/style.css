@@ -166,6 +166,11 @@ body {
   background-color: transparent;
 }
 
+.bg-blur {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 /* -----  BORDERS, SHADOWS AND OTHER  ----- */
 .hr-small {
   border: 0px;
@@ -183,6 +188,10 @@ body {
 
 .border-col:last-child {
   border: none !important;
+}
+
+.border-bottom-last-0 {
+  border-bottom: none !important;
 }
 
 /* ------- NAVBAR -------- */
@@ -222,8 +231,18 @@ body {
 }
 
 /* ------- HEADER -------- */
-.main-header {
+.main-header-h {
   height: 100vh;
+}
+
+.header-sm-h {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-sm-h > div {
+  flex: 1;
 }
 
 /* ------- FOOTER -------- */
@@ -430,9 +449,46 @@ button:focus {
   font-size: 0.875rem;
 }
 
+/* ------- FORMS -------- */
+.swiper-button-next {
+  content: url(../img/illustrations/arrow-swiper.svg);
+  width: 20px;
+  margin-top: -40px;
+}
+
+.swiper-button-prev {
+  content: url(../img/illustrations/arrow-swiper.svg);
+  transform: rotate(180deg);
+  width: 20px;
+  margin-top: -40px;
+}
+
+.swiper-pagination-current {
+  font-weight: 500;
+}
+
 /* ------- POSITIONING -------- */
+.container-fluid-p-0 {
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+header,
+footer,
+section {
+  overflow-x: hidden;
+}
+
 .w-18 {
   width: 18%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.min-h-100 {
+  min-height: 100%;
 }
 
 .my-sec {
@@ -477,6 +533,10 @@ button:focus {
 
 .mb-last-none:last-child {
   margin-bottom: 0 !important;
+}
+
+.mt-h-nav {
+  margin-top: 137px;
 }
 
 .z-1 {
@@ -596,8 +656,14 @@ a:hover {
   .w-lg-50 {
     width: 50%;
   }
+  .w-lg-60 {
+    width: 60% !important;
+  }
   .w-lg-75 {
     width: 75%;
+  }
+  .w-lg-22 {
+    width: 22%;
   }
   .my-sec {
     margin-top: 90px;
@@ -631,6 +697,9 @@ a:hover {
     padding-top: 160px;
     padding-bottom: 160px;
   }
+  .p-lg-sec {
+    padding: 90px !important;
+  }
   .py-lg-sec {
     padding-top: 90px !important;
     padding-bottom: 90px !important;
@@ -657,6 +726,14 @@ a:hover {
   }
   .mt-n {
     margin-top: -50px;
+  }
+  .team-member-positioning {
+    width: 160%;
+    transform: translateX(12.6%);
+  }
+  .three-picture-positioning {
+    width: 160%;
+    transform: translateX(12.6%);
   }
 }
 @media (min-width: 1600px) {

@@ -135,8 +135,8 @@
 
         <!-- HEADER -->
 
-        <header class="main-header text-uppercase text-white p-2">
-            <div class="bg-neat h-100 rounded-3" style="background-image: url(img/pictures/hero.png);">
+        <header class="main-header-h text-uppercase text-white p-2">
+            <div class="h-100 bg-neat rounded-3" style="background-image: url(img/pictures/hero.png);">
                 <div class="h-100 d-flex flex-column flex-md-row align-items-md-end justify-content-end justify-content-md-between p-4">
                     <p class="font-size-6 font-rader line-height-1-2 mb-2">made by hand<br>in red hook, NY</p>
                     <h1 class="font-size-1 font-rader line-height-1 text-center mb-0">Flickinger<br>Glassworks</h1>
@@ -225,10 +225,12 @@
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-stretch gy-4">
                     <div class="col-lg-4 border-end border-col border-orange-03 py-sec-lg-lg ps-lg-0">
-                        <img src="img/pictures/team.png" alt="" class="w-100 rounded-2 mb-lg-sec">
+                        <div class="ratio w-100 mb-lg-sec" style="--bs-aspect-ratio: 130%;">
+                            <img src="img/pictures/team.png" alt="" class="w-100 object-fit-cover rounded-3">
+                        </div>
                     </div>
                     <div class="col-lg-4 border-end border-col border-orange-03 py-sec-lg-lg mt-lg-sec pe-lg-0">
-                        <div class="h-100 d-flex flex-column bg-white-darker rounded-2 p-4">
+                        <div class="min-h-100 d-flex flex-column bg-white-darker rounded-3 p-4">
                             <h2 class="font-size-3 text-uppercase font-rader">Hall of fame</h2>
                             <div class="d-flex flex-column mt-auto">
                                 <p class="font-size-7 text-indent text-black">Our expertise in curved glass spans various industries and needs, including windows, lighting solutions, cabinetry, restoration projects, architectural elements, art, and decorative items. Each category benefits from our specialized approach to glass bending, which combines traditional craftsmanship with innovative techniques.</p>
@@ -404,6 +406,8 @@
                 </div>
             </div>
         </section> -->
+
+        <!-- CONTACT FORM -->
 
         <section class="px-lg-2 my-sec">
             <div class="container-fluid px-0">

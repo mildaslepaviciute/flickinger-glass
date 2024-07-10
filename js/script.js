@@ -4,20 +4,12 @@ $('#year').text(new Date().getFullYear());
 
 // Lightbox
 
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault()
-    $(this).ekkoLightbox({
-        alwaysShowClose: true,
-    })
-})
-
-// CAROUSEL TIMING
-
-$(".carousel").carousel({
-    interval: 3500,
-    keyboard: true,
-    pause: "hover",
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  var sections = document.querySelectorAll("section.border-bottom-last-0-wrapper");
+  if (sections.length > 0) {
+      sections[sections.length - 1].classList.add("border-bottom-last-0");
+  }
+});
 
 // Simple onclick event
 
