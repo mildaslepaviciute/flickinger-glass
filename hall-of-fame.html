@@ -39,8 +39,47 @@
 
         <!-- NAVBAR -->
 
-        <div class="position-relative mx-3" style="transform: translateY(20px)">
-            <nav class="navbar navbar-expand-lg bg-blur position-absolute w-100">
+        <div class="nav-wrapper fixed-top">
+            <nav class="navbar navbar-expand-lg w-100 position-absolute bg-blur rounded-3">
+                <div class="navbar-collapse w-100">
+                    <ul class="navbar-nav navbar-nav-1 mx-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Bent glass</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="position-relative">
+                    <a class='navbar-brand me-auto mx-lg-auto' href='/'>
+                        <img src="img/logo/logo-black-sm.png" alt="">
+                    </a>
+                </div>
+                <div class="navbar-collapse w-100">
+                    <ul class="navbar-nav navbar-nav-2 mx-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Hall of fame</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Bag</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- <div class="nav-wrapper fixed-top">
+            <nav class="navbar navbar-expand-lg w-100 position-absolute bg-blur rounded-3">
                 <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-lg-0">
                     <ul class="navbar-nav navbar-nav-1 mx-auto">
                         <li class="nav-item">
@@ -51,9 +90,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="my-2 order-0 order-lg-1 position-relative">
+                <div class="order-0 order-lg-1 position-relative">
                     <a class='navbar-brand me-auto mx-lg-auto' href='/'>
-                        <img src="img/logo/logo.png" alt="">
+                        <img src="img/logo/logo-black-sm.png" alt="">
                     </a>
                 </div>
                 <button class="navbar-toggler border-0 ms-auto pe-4" data-toggle="collapse" data-target=".dual-collapse2">
@@ -82,68 +121,16 @@
                     </ul>
                 </div>
             </nav>
-        </div>
-        
-
-        <!-- <nav class="navbar navbar-expand-md position-lg-absolute w-100 mt-3">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">Brand</a>
-                <button type="button" class="navbar-toggler button-style-none ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
-
-        <div class="modal fade p-0" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen me-0">
-                <div class="modal-content">
-                    <div class="modal-header border-0 p-0">
-                        <div class="container d-flex mt-5 mb-2 pe-4">
-                            <button type="button" class="ms-auto button-style-none" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container mt-lg-5">
-                            <div class="d-flex flex-column">
-                                <div class="mb-3">
-                                    <a href="#">Home</a>
-                                </div>
-                                <div class="mb-3">
-                                    <a href="#">Home</a>
-                                </div>
-                                <div class="mb-3">
-                                    <a href="#">Home</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> -->
 
         <!-- HEADER (without col-lg-4) -->
 
-        <header class="text-white pt-2 px-2">
+        <header class="pt-3 px-3">
             <div class="container-fluid px-0">
-                <div class="header-sm-h bg-neat rounded-3 text-white px-4 py-5 pb-lg-4" style="background-image: url(img/pictures/hero-team.png);">
+                <div class="header-sm-h bg-neat rounded-3 text-white px-4 py-5 py-lg-4" style="background-image: url(img/pictures/hero-team.png);">
                     <div class="row gy-4 gy-lg-0 mt-h-nav">
-                        <div class="col-lg-8">
-                            <h1 class="font-size-2 font-rader line-height-1-1 mb-0">Hall of Fame</h1>
+                        <div class="col-lg-8 ps-lg-4">
+                            <h1 class="font-size-2 font-rader line-height-1-05 mb-0">Hall of Fame</h1>
                         </div>
                     </div>
                 </div>
@@ -157,7 +144,7 @@
                 <div class="row align-items-end gy-4 mb-4 mb-lg-0">
                     <div class="col-lg-6 border-end border-col border-orange-03 pt-sec px-lg-0">
                         <div class="team-member-positioning d-flex flex-column align-items-center mb-4 mb-lg-0">
-                            <div class="ratio w-60 w-lg-22 mb-4" style="--bs-aspect-ratio: 130%;">
+                            <div class="ratio ratio-130 w-60 w-lg-22 mb-4">
                                 <img src="img/pictures/team-member.png" alt="" class="w-100 object-fit-cover rounded-3">
                             </div>
                             <h2 class="font-size-2 font-rader line-height-1 text-uppercase text-center mb-0">Angel “Shorty” Morales</h2>
@@ -176,7 +163,7 @@
                 <div class="row align-items-end gy-4 mb-4 mb-lg-0">
                     <div class="col-lg-6 border-end border-col border-orange-03 pt-sec px-lg-0">
                         <div class="team-member-positioning d-flex flex-column align-items-center mb-4 mb-lg-0">
-                            <div class="ratio w-60 w-lg-22 mb-4" style="--bs-aspect-ratio: 130%;">
+                            <div class="ratio ratio-130 w-60 w-lg-22 mb-4">
                                 <img src="img/pictures/team-member.png" alt="" class="w-100 object-fit-cover rounded-3">
                             </div>
                             <h2 class="font-size-2 font-rader line-height-1 text-uppercase text-center mb-0">Angel “Shorty” Morales</h2>
@@ -195,7 +182,7 @@
                 <div class="row align-items-end gy-4 mb-4 mb-lg-0">
                     <div class="col-lg-6 border-end border-col border-orange-03 pt-sec px-lg-0">
                         <div class="team-member-positioning d-flex flex-column align-items-center mb-4 mb-lg-0">
-                            <div class="ratio w-60 w-lg-22 mb-4" style="--bs-aspect-ratio: 130%;">
+                            <div class="ratio ratio-130 w-60 w-lg-22 mb-4">
                                 <img src="img/pictures/team-member.png" alt="" class="w-100 object-fit-cover rounded-3">
                             </div>
                             <h2 class="font-size-2 font-rader line-height-1 text-uppercase text-center mb-0">Angel “Shorty” Morales</h2>
@@ -209,14 +196,14 @@
             </div>
         </section>
 
-        <!-- CONTACT FORM (without class .my-sec) -->
+        <!-- CONTACT FORM -->
 
-        <section class="px-lg-2">
+        <section class="px-lg-3">
             <div class="container-fluid px-0">
-                <div class="bg-neat rounded-3 rounded-0-mob text-white px-4 py-5 pb-lg-4" style="background-image: url(img/pictures/bg-glasswork.png);">
+                <div class="bg-neat rounded-3 rounded-0-mob text-white px-4 py-sec pb-lg-4" style="background-image: url(img/pictures/bg-glasswork.png);">
                     <div class="row gy-4">
-                        <div class="col-lg-6">
-                            <h2 class="font-size-2 font-rader line-height-1-1 mb-0">Reach Out<br>To Us</h2>
+                        <div class="col-lg-6 ps-lg-4">
+                            <h2 class="font-size-2 font-rader line-height-1 mb-0">Reach Out<br>To Us</h2>
                         </div>
                         <div class="col-lg-6 offset-lg-6 mt-n">
                             <div class="bg-white-darker rounded-1 p-4 p-lg-5">
@@ -254,9 +241,9 @@
 
         <!-- FOOTER -->
 
-        <footer class="bg-white-darker">
+        <footer class="bg-white-darker mt-sec">
             <div class="container-fluid py-4">
-                <h2 class="font-size-w-100 text-uppercase font-rader d-flex justify-content-between mx-lg-4"><span>Flickinger </span><span>glassworks</span></h2>
+                <h2 class="font-size-w-100 text-uppercase font-rader d-flex justify-content-between"><span>Flickinger </span><span>glassworks</span></h2>
             </div>
             <div class="border-top border-bottom border-orange-03 line-height-1-3">
                 <div class="container-fluid">

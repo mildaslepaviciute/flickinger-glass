@@ -11,12 +11,32 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-// Simple onclick event
 
-// $("#.classOrId").click(function(){
-//     $(".classOrId").removeClass("class");
-//     $(".classOrId").addClass("class");
-// });
+$(document).ready(function() {
+  var scrollPosition = 0;
+
+  var modal = document.getElementById('contactModal');
+
+  modal.addEventListener('show.bs.modal', function () {
+      // Save the current scroll position
+      scrollPosition = window.scrollY;
+
+      // Prevent body from shifting
+      document.body.style.position = 'fixed';
+      document.body.style.top = -scrollPosition + 'px';
+      document.body.style.width = '100%';
+  });
+
+  modal.addEventListener('hidden.bs.modal', function () {
+      // Remove fixed position styles
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+
+      // Restore the scroll position
+      window.scrollTo(0, scrollPosition);
+  });
+});
 
 
 // AOS animations
